@@ -1,0 +1,28 @@
+{
+  "name": "CopyTitleAndURL",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Copy page title and URL",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+      "tabs",
+      "clipboardWrite"
+  ],
+  "commands": {
+      "copy-title-url" : {
+          "description": "Copy title and URL",
+          "global": true,
+          "suggested_key": {
+              "default": "Ctrl+Shift+C",
+              "mac": "Command+Shift+C"
+          }
+      }
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
